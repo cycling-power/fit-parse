@@ -1,6 +1,8 @@
 language: scala
 scala:
   - 2.11.2
+jdk:
+  - oraclejdk8
 env:
   global:
     secure: diAVf9c3tEYXkFQPrQXfyBRfqJwHCl8lT0Jon4KiuPKtH9X5JVwQ726yao+x6fyjcRem4j4ylDgIf1lvca7UsJD9th0x1VJ9TldILPqDgjzI4cNUqCBVPvfeoCCzeQbX7t5op4Uzqw5VTKzpfStYpp645ZsEWWcv7gsC3A92Csc=
