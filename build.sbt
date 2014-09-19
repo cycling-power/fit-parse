@@ -24,6 +24,7 @@ libraryDependencies ++= {
 managedClasspath in Test <<= (managedClasspath in Test, baseDirectory, target) map {
   (cp, bd, t) => {
     val token = System.getenv("FIT_TOKEN")
+	println(Option(token))
     if (token != null) {
       val cipherType = "AES/CFB8/PKCS5Padding"
       val parameterSpec = new IvParameterSpec(List.fill(16)("0".toByte).toArray)
